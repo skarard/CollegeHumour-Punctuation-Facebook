@@ -1,6 +1,6 @@
 @font-face {
     font-family: collegeHumour;
-    src: local(collegeHumour), url('chrome-extension://__MSG_@@extension_id__/CollegeHumour.ttf') format('opentype');
+    src: local(collegeHumour), url('chrome-extension://__MSG_@@extension_id__/font/CollegeHumour.ttf') format('opentype');
 }
 
 /* I want to rebuild the font so that it displays nicely on Win, Mac and Linux. At the moment some symbols are displayed to small so I doubled their size. This makes the line sizes a bit weird sometimes... */

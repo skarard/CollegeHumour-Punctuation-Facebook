@@ -1,9 +1,9 @@
 // Check whether new version or updated version is installed and if so display options.html 
 chrome.runtime.onInstalled.addListener(function(details){
     if(details.reason == "install"){
-	chrome.tabs.create({url: "options.html"});
+	chrome.tabs.create({url: "../options.html"});
     }else if(details.reason == "update"){
-	chrome.tabs.create({url: "options.html"});
+	chrome.tabs.create({url: "../options.html"});
     }
 });
 // Google Analytics
