@@ -42,7 +42,7 @@ function occurrences(string, subString, allowOverlapping){
 function rewrite() {
   // Find all the text to replace with in the tags defind below by class.
   var result = document.evaluate(
-      '//span[contains(@class, "userContent")] | //div[contains(@class, "direction_ltr")] | //span[contains(@class,"UFIContainer")] | //div[contains(@class, "snippet")]',
+      '//span[contains(@class, "userContent")] | //div[contains(@class, "direction_ltr")] | //div[contains(@class,"UFIContainer")] | //div[contains(@class, "snippet")]',
       document, null, XPathResult.UNORDERED_NODE_ITERATOR_TYPE, null);
 
   var item;
