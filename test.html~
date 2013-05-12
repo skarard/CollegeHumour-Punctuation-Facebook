@@ -1,0 +1,73 @@
+<html>
+<head>
+<style>
+ @font-face {
+    font-family: collegeHumour;
+    src: local(collegeHumour), url('CollegeHumour.ttf') format('opentype');
+}
+
+span.chf {
+	font-family:collegeHumour;
+	font-size:2em;
+}
+</style>
+</head>
+<body>
+<div>Some text_..</div>
+<div>Some text and/or other text</div>
+<div>*"Some text"*</div>
+<div>Some text:; better text</div>
+<div>({Some text})</div>
+<div>Some text~</div>
+<div>Some text...</div>
+<div>^[Some text]^</div>
+<div>Some text</div>
+<script type="text/javascript">
+    var toSinceriod = '_.';
+    var replaceSinceriod ='<span class="chf">.</span>';
+    
+    var toAndorpersand = 'and/or';
+    var replaceAndorpersand ='<span class="chf">&</span>';
+    
+    var toMockwotation0 = '*"';
+    var replaceMockwotation0 ='<span class="chf">&#8220;</span>';
+    
+    var toMockwotation1 = '"*';
+    var replaceMockwotation1 ='<span class="chf">&#8221;</span>';
+    
+    var toHemiDemiSemi = ':;';
+    var replaceHemiDemiSemi ='<span class="chf">;</span>';
+
+    var toSarcastises0 = '({';
+    var replaceSarcastises0 ='<span class="chf">(</span>';
+
+    var toSarcastises1 = '})';
+    var replaceSarcastises1 ='<span class="chf">)</span>';
+
+    var toImNotAngry = '~';
+    var replaceImNotAngry ='<span class="chf">,</span>';
+
+    var toSuperellipsis = '...';
+    var replaceSuperellipsis ='<span class="chf">-</span>';
+
+    var toMorganFreemark0 = '^[';
+    var replaceMorganFreemark0 ='<span class="chf">[</span>';
+
+    var toMorganFreemark1 = ']^';
+    var replaceMorganFreemark1 ='<span class="chf">]</span>';
+
+    document.body.innerHTML = document.body.innerHTML.replace(toSinceriod, replaceSinceriod);
+    document.body.innerHTML = document.body.innerHTML.replace(toAndorpersand, replaceAndorpersand);
+    document.body.innerHTML = document.body.innerHTML.replace(toAndorpersand, replaceAndorpersand);
+    document.body.innerHTML = document.body.innerHTML.replace(toMockwotation0, replaceMockwotation0);
+    document.body.innerHTML = document.body.innerHTML.replace(toMockwotation1, replaceMockwotation1);
+    document.body.innerHTML = document.body.innerHTML.replace(toHemiDemiSemi, replaceHemiDemiSemi);
+    document.body.innerHTML = document.body.innerHTML.replace(toSarcastises0, replaceSarcastises0);
+    document.body.innerHTML = document.body.innerHTML.replace(toSarcastises1, replaceSarcastises1);
+    document.body.innerHTML = document.body.innerHTML.replace(toImNotAngry, replaceImNotAngry);
+    document.body.innerHTML = document.body.innerHTML.replace(toSuperellipsis, replaceSuperellipsis);
+    document.body.innerHTML = document.body.innerHTML.replace(toMorganFreemark0, replaceMorganFreemark0);
+    document.body.innerHTML = document.body.innerHTML.replace(toMorganFreemark1, replaceMorganFreemark1);
+</script>
+</body>
+</html>

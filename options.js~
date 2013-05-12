@@ -1,0 +1,13 @@
+// Save this script as `options.js`
+
+// Saves options to localStorage.
+function getKeys() {
+  localStorage["toSinceriod"] = '_.';
+  localStorage["replaceSinceriod"] = '<span class="chfb">.</span>';
+  // Update status to let user know options were saved.
+  var key = document.getElementById("Sinceriod");
+  key.innerHTML = localStorage["toSinceriod"] + ' = ' localStorage["replaceSinceriod"];
+}
+
+document.addEventListener('DOMContentLoaded', getKeys);
+
